@@ -11,9 +11,6 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:true}));
 
 
-
-
-
 app.get('/',(req,res)=>{res.render('index',{title:'Account Summary',accounts})
 });
 app.get('/savings',(req,res)=>{res.render('account',{account:accounts.savings})
